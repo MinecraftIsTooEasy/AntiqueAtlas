@@ -24,7 +24,7 @@ repositories {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/modid.accesswidener")
+    accessWidenerPath = file("src/main/resources/antiqueatlas.accesswidener")
     mergedMinecraftJar()
     //latest fishmodloader https://github.com/MinecraftIsTooEasy/FishModLoader/releases/latest
     setFML(new File("libs\\FishModLoader-v${loader_version}.jar"))
@@ -53,7 +53,7 @@ dependencies {
 
     // Rusted_Iron_Core API. This is technically optional, but you probably want it anyway.
     implementation files("libs\\RustedIronCore-${rusted_iron_core_version}.jar")
-    implementation files("libs\\ForgeConfig-0.0.1.jar")
+    implementation files("libs\\ForgeConfig-0.0.2.jar")
 }
 
 processResources {

@@ -1,0 +1,4 @@
+accessWidener v2 named
+
+accessible field net/minecraft/Item itemRand Ljava/util/Random;
+accessible method net/minecraft/NBTTagCompound getTagMap (Lnet/minecraft/NBTTagCompound;)Ljava/util/Map;

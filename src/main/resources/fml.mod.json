@@ -1,27 +1,35 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "antiqueatlas",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Antique Atlas",
+	"description": "Antique Atlas is a book that acts like a map featuring infinite scrolling, zoom and custom labeled markers. The map is generated around the player by calculating the average biome in each 16x16 chunk.",
 	"authors": [
-		"Me!"
+		"Hunternif",
+		"Xy_Luce"
+	],
+	"contributors": [
+		"coolAlias",
+		"Kenkron",
+		"TheCodeWarrior",
+		"CapoFantasma97",
+		"Mazdallier"
 	],
 	"contact": {
 		"homepage": "https://minecraftistooeasy.github.io/",
-		"sources": "https://github.com/MinecraftIsTooEasy/fish-example-mod"
+		"sources": "https://github.com/MinecraftIsTooEasy/AntiqueAtlas"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "GPL-v3",
+	"icon": "assets/antiqueatlas/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"hunternif.mc.atlas.AntiqueAtlasMod"
+		],
+		"registry": [
+			"hunternif.mc.atlas.AntiqueAtlasItem"
 		]
 	},
-	"mixins": [
-		"modid.mixins.json"
-	],
 	"depends": {
 		"fishmodloader": ">=3.4.0",
 		"minecraft": "1.6.4-mite",
@@ -30,5 +38,9 @@
 	},
 	"suggests": {
 		"another-mod": "*"
-	}
+	},
+	"accessWidener": "antiqueatlas.accesswidener",
+	"mixins": [
+		"antiqueatlas.mixins.json"
+	]
 }

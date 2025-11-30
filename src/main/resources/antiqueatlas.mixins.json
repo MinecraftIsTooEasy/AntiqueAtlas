@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "hunternif.mc.atlas.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"target": "DEFAULT",
+	"mixins": [
+		"NetClientHandlerMixin",
+		"NetHandlerMixin",
+		"NetServerHandlerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
